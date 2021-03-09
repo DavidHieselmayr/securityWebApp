@@ -1,3 +1,4 @@
+at\htl\ws_service\ChatSocket.class
 at\htl\endpoint\SecurityEndpoint.class
 at\htl\endpoint\ChatUserEndpoint.class
 at\htl\model\LoginData.class

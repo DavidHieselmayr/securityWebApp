@@ -29,7 +29,7 @@ public class ChatSocket {
     GroupRepository grouprp;
     @Inject
     MessageRepository messagerp;
-    
+
 
     Map<String, Session> sessions = new ConcurrentHashMap<>();
 
