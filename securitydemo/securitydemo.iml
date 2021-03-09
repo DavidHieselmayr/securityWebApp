@@ -224,5 +224,6 @@
     <orderEntry type="library" name="Maven: jakarta.interceptor:jakarta.interceptor-api:1.2.5" level="project" />
     <orderEntry type="library" name="Maven: io.quarkus:quarkus-jsonp:1.4.2.Final" level="project" />
     <orderEntry type="library" name="Maven: jakarta.servlet:jakarta.servlet-api:4.0.3" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.websocket:jakarta.websocket-api:1.1.2" level="project" />
   </component>
 </module>

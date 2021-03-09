@@ -45,8 +45,8 @@ public class ChatUserEndpoint {
     @PUT
     public Response update(ChatUser s) {
         ChatUser sOld = chatUserRepository.findById(s.userid);
-        sOld.lastname = s.lastname;
-        sOld.firstname = s.firstname;
+        sOld.username = s.username;
+        sOld.password = s.password;
 
         return Response.status(204).build();
     }

@@ -1,8 +1,8 @@
 package at.htl.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.LinkedList;
+import java.util.List;
 
 @Entity
 public class Group {
@@ -10,4 +10,15 @@ public class Group {
     private long id;
     private String groupname;
 
+    @ManyToMany (mappedBy = "groups")
+    private List<ChatUser> users;
+
+    @OneToMany
+    private List<Message> messages;
+
+    /*
+    public Group(){
+        users = new List<ChatUser>();
+        messages = new List<Message>();
+    }*/
 }

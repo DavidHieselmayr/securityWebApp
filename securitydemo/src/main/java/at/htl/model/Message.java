@@ -3,6 +3,7 @@ package at.htl.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.time.LocalDateTime;
 
 @Entity
@@ -13,4 +14,10 @@ public class Message {
     private String text;
     private LocalDateTime timestamp;
 
+    public Message(String username, String message, LocalDateTime now) {
+    }
+
+    public Message() {
+
+    }
 }

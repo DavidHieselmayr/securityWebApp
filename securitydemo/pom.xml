@@ -61,6 +61,11 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-smallrye-jwt</artifactId>
         </dependency>
+        <dependency>
+            <groupId>jakarta.websocket</groupId>
+            <artifactId>jakarta.websocket-api</artifactId>
+            <version>1.1.2</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

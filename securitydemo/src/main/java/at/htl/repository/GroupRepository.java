@@ -8,5 +8,6 @@ import javax.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
 public class GroupRepository implements PanacheRepositoryBase<Group, String> {
+
 }
 
