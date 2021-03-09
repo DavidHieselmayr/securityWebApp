@@ -6,13 +6,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 
 @Entity
-public class ChatUser extends PanacheEntityBase {
+public class ChatUser implements Serializable {
     @Id
-    public String userid;
+    public long userid;
     @Column(unique = true)
     public String username;
     public String password;

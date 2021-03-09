@@ -1,11 +1,12 @@
 package at.htl.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 
 @Entity
-public class Group {
+public class Group implements Serializable {
     @Id
     private long id;
     private String groupname;

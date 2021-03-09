@@ -31,12 +31,15 @@ public class ChatUserEndpoint {
 
     @GET
     @Path("/{userid}")
-    public ChatUser getStudent(@PathParam("userid") String userid) {
+    public ChatUser getStudent(@PathParam("userid") long userid) {
         return chatUserRepository.findById(userid);
     }
 
     @POST
+    @Consumes(MediaType.APPLICATION_JSON)
     public Response create(ChatUser s) {
+
+
         chatUserRepository.persist(s);
         // return Response.status(201).build();
         return Response.created(URI.create("/students/" + s.userid)).build();
