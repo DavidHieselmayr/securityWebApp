@@ -1,0 +1,7 @@
+at\htl\endpoint\ChatUserEndpoint.class
+at\htl\model\LoginData.class
+at\htl\model\ChatUser.class
+at\htl\model\Message.class
+at\htl\endpoint\SecurityEndpoint.class
+at\htl\util\TokenUtils.class
+at\htl\repository\ChatUserRepository.class
